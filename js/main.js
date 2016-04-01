@@ -22,11 +22,11 @@ $btnCollapse.on('click', function (e) {
 });
 
 $btnBounce.on('click', function (e) {
-  $circle.toggleClass('circle-click');
+  $circle.addClass('circle-click');
 });
 
 $btnBounce.on('animationend', '.circle-click', function () {
-  $(this).remove();
+  $(this).removeClass('circle-click');
 });
 
 $btnAppend.on('click', function (e) {
